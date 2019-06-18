@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-export default class Dashboard extends Component {
-    state = {
-        greeting: 'Hello World',
-    };
+export default function Dashboard({ strikeBall, foulBall, ballBall, hitBall }) {
 
-    render() {
-        return (
-            <div className="dashboard">
 
-            </div>
-        );
-    }
 
-    greetTeam = () => {
-        this.setState({ greeting: 'Hello developers' });
-    };
+    return (
+        <div className="dashboard">
+
+            <button onClick={strikeBall}>Strike</button>
+            <button onClick={foulBall}>Foul</button>
+            <button onClick={ballBall}>Ball</button>
+            <button onClick={hitBall}>Hit</button>
+
+        </div>
+    );
+
+
 }
