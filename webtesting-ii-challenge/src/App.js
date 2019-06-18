@@ -14,7 +14,7 @@ class App extends Component {
   };
 
   render() {
-    const { strike, ball, foul, hit, reset } = this.state;
+    const { strike, ball, foul, hit } = this.state;
     return (
       <div className="App">
         <h1>Baseball</h1>
